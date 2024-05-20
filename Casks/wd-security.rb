@@ -28,10 +28,13 @@ cask "wd-security" do
               executable: "#{staged_path}/exec/WD Security Installer.app/Contents/MacOS/WD Security Installer",
               args:       ["-uninstall", "-silent"],
               sudo:       true,
-            }
+            },
+            delete: [
+              "/Library/LaunchDaemons/com.wdc.WDPrivilegedHelper.plist",
+              "/Library/PrivilegedHelperTools/com.wdc.WDPrivilegedHelper",
+            ]
 
   zap trash: [
-    "/Library/LaunchDaemons/com.wdc.WDPrivilegedHelper.plist",
     "~/Library/Preferences/com.wdc.branded.security.plist",
   ]
 end
