@@ -29,12 +29,10 @@ cask "wd-security" do
               args:       ["-uninstall", "-silent"],
               sudo:       true,
             },
-            delete: [
+            delete:    [
               "/Library/LaunchDaemons/com.wdc.WDPrivilegedHelper.plist",
               "/Library/PrivilegedHelperTools/com.wdc.WDPrivilegedHelper",
             ]
 
-  zap trash: [
-    "~/Library/Preferences/com.wdc.branded.security.plist",
-  ]
+  zap trash: "~/Library/Preferences/com.wdc.branded.security.plist"
 end
