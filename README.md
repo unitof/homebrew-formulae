@@ -1,15 +1,15 @@
-# Unitof Wd-security
+# unitof’s secret Homebrew formulae
 
 ## How do I install these formulae?
 
-`brew install unitof/wd-security/<formula>`
+`brew install unitof/formulae/<formula>`
 
-Or `brew tap unitof/wd-security` and then `brew install <formula>`.
+Or `brew tap unitof/formulae` and then `brew install <formula>`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
-tap "unitof/wd-security"
+tap "unitof/formulae"
 brew "<formula>"
 ```
 
